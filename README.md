@@ -16,15 +16,15 @@
 
 ## 截图
 
-![登陆页面](http://happyhome.me/screenshot/happyhome/1.png)
-![成员列表页面](http://happyhome.me/screenshot/happyhome/2.png)
-![成员基本信息](http://happyhome.me/screenshot/happyhome/3.png)
-![成员交费信息](http://happyhome.me/screenshot/happyhome/4.png)
-![成员加减分页面](http://happyhome.me/screenshot/happyhome/5.png)
-![成员成绩统计页面](http://happyhome.me/screenshot/happyhome/6.png)
-![添加新成员页面](http://happyhome.me/screenshot/happyhome/7.png)
-![消息页面](http://happyhome.me/screenshot/happyhome/8.png)
-![统计页面](http://happyhome.me/screenshot/happyhome/9.png)
+![登陆页面](https://raw.githubusercontent.com/huanghao521/happyhome/master/screenshot/1.png)
+![成员列表页面](https://raw.githubusercontent.com/huanghao521/happyhome/master/screenshot/2.png)
+![成员基本信息](https://raw.githubusercontent.com/huanghao521/happyhome/master/screenshot/3.png)
+![成员交费信息](https://raw.githubusercontent.com/huanghao521/happyhome/master/screenshot/4.png)
+![成员加减分页面](https://raw.githubusercontent.com/huanghao521/happyhome/master/screenshot/5.png)
+![成员成绩统计页面](https://raw.githubusercontent.com/huanghao521/happyhome/master/screenshot/6.png)
+![添加新成员页面](https://raw.githubusercontent.com/huanghao521/happyhome/master/screenshot/7.png)
+![消息页面](https://raw.githubusercontent.com/huanghao521/happyhome/master/screenshot/8.png)
+![统计页面](https://raw.githubusercontent.com/huanghao521/happyhome/master/screenshot/9.png)
 
 ## 使用方法
 
