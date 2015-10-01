@@ -16,9 +16,19 @@
 
 ## 截图
 
+![登陆页面](http://happyhome.me/screenshot/happyhome/1.png)
+![成员列表页面](http://happyhome.me/screenshot/happyhome/2.png)
+![成员基本信息](http://happyhome.me/screenshot/happyhome/3.png)
+![成员交费信息](http://happyhome.me/screenshot/happyhome/4.png)
+![成员加减分页面](http://happyhome.me/screenshot/happyhome/5.png)
+![成员成绩统计页面](http://happyhome.me/screenshot/happyhome/6.png)
+![添加新成员页面](http://happyhome.me/screenshot/happyhome/7.png)
+![消息页面](http://happyhome.me/screenshot/happyhome/8.png)
+![统计页面](http://happyhome.me/screenshot/happyhome/9.png)
+
 ## 使用方法
 
-1. 导入数据库;
+1. 导入 *happyhome_db.sql* 到数据库;
 2. 打开 *configs.php* 页面,填入你的数据库地址、用户名、密码以及数据库名;
 2. 在 *configs.php* 页面设置你的程序入口密码以及删除用户密码;
 
