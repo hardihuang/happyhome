@@ -3,7 +3,6 @@
 $mid=$_REQUEST['mid'];
 $row=getMemberInfo($mid);
 $school_arr=getAllSchool();
-print_r($row);
 
 ?>
 <div id="do_member_info" data-role='page' data-title='修改成员信息'>
@@ -38,6 +37,7 @@ print_r($row);
 			}
 		?>
 		</div>
+
 		<form action="doAction.php?act=edit_member" method="post" data-ajax="false" enctype="multipart/form-data" id="do_member_edit_form">
 		<label for="member_name">姓名:</label>
 		<input type="text" name="name" id="member_name" value="<?php echo $row['name']; ?>">
@@ -108,8 +108,24 @@ print_r($row);
 		 ?>
 		<!-- <input type="submit" value="提交" > -->
 		</form>
+		
+		<!-- 删除用户按钮和popup form -->
+		<a href="#delete_member" data-rel="popup" data-position-to="window" class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-btn-icon-left ui-icon-skull" data-transition="pop">删除用户</a>
+		<div data-role="popup" id="delete_member" data-theme="a" class="ui-corner-all">
+			<form action="doAction.php?act=delete_member" method="post" data-ajax="false">
+				<div style="padding:10px 20px;">
+					<h3>请输入管理员密码:</h3>
+					<input type="hidden" name="mid" id="mid" value="<?php echo $mid; ?>">
+					<input type="password" name="password" id="pw" data-theme="a">
+					<button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">确定删除</button>
+				</div>
+			</form>
+		</div>
+
 	</div>
 </div>
+
+
 
 <script>
 	// 点击顶部右侧按钮,提交表格

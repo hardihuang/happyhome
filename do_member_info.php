@@ -86,6 +86,7 @@ $school_arr=getAllSchool();
 		</select>
 		<!-- <input type="submit" value="提交" > -->
 		</form>
+		
 	</div>
 </div>
 <script>

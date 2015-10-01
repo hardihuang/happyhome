@@ -9,6 +9,14 @@ $rows=getMemberInfo($mid);
 	
 	<div data-role='header' data-position='fixed' class="header" data-tap-toggle="false">
 		<h2><?php echo $rows['name'] ?></h2>
+		<a href="index.php"
+			rel="external"
+			data-icon='carat-l'
+			data-iconpos='notext'
+			data-direction='reverse'
+			class='ui-btn-left'
+			data-transition="none" >
+		后退</a>
 		<a href="do_member_edit.php?mid=<?php echo $mid ?>"
 			rel="external"
 			id="member_action_btn"

@@ -75,6 +75,44 @@ function add_member(){
 	return $msg;
 }
 
+function delete_member(){
+	// return print_r($_POST);
+	$password=$_POST['password'];
+	$mid=$_POST['mid'];
+	if($password!=PW_admin){
+		return "无法验证您的身份 <meta http-equiv='refresh' content='2;url=member.php?mid=".$mid."'/>";
+	}
+	if(empty($mid)){
+		return "没有选择用户 <meta http-equiv='refresh' content='2;url=index.php'/>";
+	}
+	
+	// 删除头像
+	$avatar=getMemberInfo($mid)['avatar'];
+	$filename="images/uploads/avatar/".$avatar;
+	if(file_exists($filename)){
+		unlink($filename);
+	}
+	$filename="images/uploads/avatar_80/".$avatar;
+	if(file_exists($filename)){
+		unlink($filename);
+	}
+	$filename="images/uploads/avatar_150/".$avatar;
+	if(file_exists($filename)){
+		unlink($filename);
+	}
+
+	// 删除数据库中 hh_fee, hh_fen, hh_score, hh_phone 对应该用户的数据
+	delete('hh_fee',"mid=$mid");
+	delete('hh_fen',"mid=$mid");
+	delete('hh_score',"mid=$mid");
+	delete('hh_phone',"mid=$mid");
+
+	// 删除 hh_member 中用户的数据
+	delete('hh_member',"mid=$mid");
+
+	return "用户删除成功! <meta http-equiv='refresh' content='1;url=index.php'/>";
+}
+
 function edit_member(){
 	$arr=$_POST;
 
@@ -135,7 +173,8 @@ function edit_member(){
 		update('hh_phone',$arr_phone,"mid=$mid");
 	}
 	
-	$msg="成功修改了 ".$arr['name']." 成员的信息!<br/>2秒钟后跳转到成员信息页面!<meta http-equiv='refresh' content='2;url=member.php?mid=".$mid."'/>";
+	// $msg="成功修改了 ".$arr['name']." 成员的信息!<br/>2秒钟后跳转到成员信息页面!<meta http-equiv='refresh' content='2;url=member.php?mid=".$mid."'/>";
+	$msg="成功修改了 ".$arr['name']." 成员的信息!<br/>2秒钟后跳转到成员信息页面!";
 	return $msg;
 }
 

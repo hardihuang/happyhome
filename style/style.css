@@ -116,3 +116,8 @@
 .ui-panel-dismiss-open.ui-panel-dismiss-position-right{
 	right:70% !important;
 }
+
+.ui-icon-skull:after {
+	background:url("../images/icon/21-skull.png");
+	background-size: 22px 22px;
+}

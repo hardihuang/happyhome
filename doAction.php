@@ -15,6 +15,8 @@ if($act==='login'){
 	$msg=add_member_fen();
 }elseif($act==='add_member_score'){
 	$msg=add_member_score();
+}elseif($act==='delete_member'){
+	$msg=delete_member();
 }
 
  ?>
