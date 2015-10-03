@@ -71,7 +71,7 @@ CREATE TABLE `hh_member` (
   `gender` enum('boy','girl') DEFAULT 'boy',
   `grade` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`mid`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -84,7 +84,8 @@ DROP TABLE IF EXISTS `hh_phone`;
 CREATE TABLE `hh_phone` (
   `mid` int(11) NOT NULL,
   `phone` varchar(30) DEFAULT NULL,
-  `owner` varchar(20) DEFAULT NULL
+  `owner` varchar(20) DEFAULT NULL,
+  UNIQUE KEY `mid` (`mid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -131,4 +132,4 @@ CREATE TABLE `hh_score` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-10-01 21:01:51
+-- Dump completed on 2015-10-03 17:26:25

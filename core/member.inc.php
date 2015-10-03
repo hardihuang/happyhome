@@ -170,7 +170,7 @@ function edit_member(){
 	if(isset($arr_phone)){
 		$arr_phone['mid']=$mid;
 		// 如果第一次添加成员时没有输入电话,而修改时输入了,那么使用insert而不是update
-		if(!update('hh_phone',$arr_phone,"mid=$mid")){
+		if(update('hh_phone',$arr_phone,"mid=$mid")==0){
 			insert('hh_phone',$arr_phone);
 		}
 	}
