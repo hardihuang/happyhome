@@ -7,6 +7,14 @@ $rows3=notify_fee(3);
 
 	<div data-role='header' data-position='fixed' data-tap-toggle="false">
 		<h2>消息</h2>
+		<a href="doAction.php?act=logout"
+			rel='external'
+			data-icon='power'
+			data-iconpos='notext'
+			data-direction='reverse'
+			class='ui-btn-left'
+			data-transition="none" >
+		退出</a>
 	</div>
 
 	<div data-role='content'>

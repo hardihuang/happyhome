@@ -3,6 +3,14 @@
 
 	<div data-role='header' data-position='fixed' data-tap-toggle="false">
 		<h2>统计</h2>
+		<a href="doAction.php?act=logout"
+			rel='external'
+			data-icon='power'
+			data-iconpos='notext'
+			data-direction='reverse'
+			class='ui-btn-left'
+			data-transition="none" >
+		退出</a>
 		<a href="#about"
 			data-icon='info'
 			data-iconpos='notext'

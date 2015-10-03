@@ -115,7 +115,6 @@ function delete_member(){
 
 function edit_member(){
 	$arr=$_POST;
-
 	$mid=$arr['mid'];
 	if(empty($arr['name'])){
 		$msg="成员姓名是必填项哦!<meta http-equiv='refresh' content='1;url=".$_SERVER['HTTP_REFERER']."'/>";
@@ -170,11 +169,14 @@ function edit_member(){
 	//若$arr_phone数组不存在(用户没有输入电话号),则不进行写入hh_phone数据库的操作
 	if(isset($arr_phone)){
 		$arr_phone['mid']=$mid;
-		update('hh_phone',$arr_phone,"mid=$mid");
+		// 如果第一次添加成员时没有输入电话,而修改时输入了,那么使用insert而不是update
+		if(!update('hh_phone',$arr_phone,"mid=$mid")){
+			insert('hh_phone',$arr_phone);
+		}
 	}
 	
 	// $msg="成功修改了 ".$arr['name']." 成员的信息!<br/>2秒钟后跳转到成员信息页面!<meta http-equiv='refresh' content='2;url=member.php?mid=".$mid."'/>";
-	$msg="成功修改了 ".$arr['name']." 成员的信息!<br/>2秒钟后跳转到成员信息页面!";
+	$msg="成功修改了 ".$arr['name']." 成员的信息!<br/>2秒钟后跳转到成员信息页面!<meta http-equiv='refresh' content='2;url=member.php?mid=".$mid."'/>";
 	return $msg;
 }
 
