@@ -1,0 +1,138 @@
+.clear{
+	clear:both;
+}
+.no_padding{
+	padding: 0;
+}
+.text_center{
+	text-align: center;
+}
+.text_right{
+	text-align: right;
+}
+.ui-btn-icon-top {
+	padding-top: 2.7em;
+}
+.hide{
+	display: none;
+}
+/*login page*/
+
+.login_top{
+	display: block;
+	width: 100%;
+}
+.login_top .logo{
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+}
+.login_top h3{
+	text-align: center;
+}
+/*member_info tab*/
+.member_info_top{
+	display: block;
+	width: 100%;
+}
+.member_info_top .logo{
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+}
+
+.member_info_top .member_avatar{
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 1px 3px rgba(0,0,0,.15);
+	-webkit-border-radius: .3125em;
+	border-radius: .3125em;
+}
+.member_info_top span{
+	display: block;
+	margin-left: 15px;
+	float: left;
+}
+.member_info_top span h3{
+	margin-top: 0;
+}
+.ui-listview>.ui-li-divider{
+	padding: .5em 0.5em;
+}
+.phone_num{
+	width: 65%;
+	float: left;
+	display: inline-block;
+}
+.phone_owner{
+	width: 30%;
+	float: right;
+	display: inline-block;
+}
+
+/*member_fen tab*/
+.member_fen_top{
+	margin-top: 0;
+}
+.member_fen_top i{
+	color: #1B91EF;
+}
+.fen-info-pop{
+	margin: 0;
+	height: 22px;
+}
+
+/*notification page*/
+.bgc_green{
+	background-color: #DBFBDB !important;
+}
+.bgc_red{
+	background-color: #F7A2A2 !important;
+}
+.bgc_yellow{
+	background-color: #FFFFBA !important;
+}
+.bgc_birthday{
+	background-color: #BADFFF !important;
+}
+/*about off canvas panel*/
+#about  img{
+	display: block;
+	width: 7em;
+	margin: 15px auto;
+}
+#about  h3{
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+#about  i{
+	display: block;
+	text-align: center;
+}
+
+.ui-panel{
+	width:70% !important;
+}
+.ui-panel-dismiss-open.ui-panel-dismiss-position-right{
+	right:70% !important;
+}
+
+.ui-icon-skull:after {
+	background:url("../images/icon/21-skull.png");
+	background-size: 22px 22px;
+}
+
+.pie_chart{
+	width: 100%;
+	height: 100%;
+}
+.chart_table{
+	text-align: center;
+	width: 100%;
+}
+
+.analyze_table_title{
+	margin-top: -10px;
+}
